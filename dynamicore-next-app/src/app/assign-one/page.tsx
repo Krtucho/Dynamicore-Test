@@ -3,7 +3,7 @@
 import SectionOne from "@/views/AssignOne";
 import UserType from "@/types/user-type";
 
-export default function Home() {
+export default function SectionOnePage() {
     const testUsers: UserType[] = [
         {
             name: "Alex",

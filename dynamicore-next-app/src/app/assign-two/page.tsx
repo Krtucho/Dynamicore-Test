@@ -2,8 +2,7 @@
 
 import AssignTwo from "@/views/AssignTwo";
 
-
-export default function Home() {
+export default function SectionTwoPage() {
 
     return (
         <div className="flex h-full w-full mt-6">

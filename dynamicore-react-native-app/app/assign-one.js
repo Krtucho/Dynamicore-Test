@@ -1,7 +1,7 @@
 "use client"
 
-import App from "../App";
+import ItemsList from "../components/ItemsList";
 
 export default function Index(){
-    return <App/>
+    return <ItemsList/>
 }

@@ -2,7 +2,6 @@ import React, { useEffect, useState } from 'react';
 import { View, StyleSheet, PermissionAndroid, Platform } from 'react-native';
 import MapView, { Market } from 'react-native-maps';
 import Geolocation from '@react-native-community/geolocation';
-import { MapContainer, TileLayer } from 'react-leaflet';
 
 const MapScreen = () => {
     const [location, setLocation] = useState({
@@ -33,21 +32,6 @@ const MapScreen = () => {
         };
         requestLocationPermission();
     }, []);
-
-    if (Platform.OS === 'web') {
-        return (
-          <MapContainer
-            center={[51.505, -0.09]}
-            zoom={13}
-            style={{ height: '100%', width: '100%' }}
-          >
-            <TileLayer
-              url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-              attribution='© OpenStreetMap contributors'
-            />
-          </MapContainer>
-        );
-      }
 
     return (
         <View style={styles.container}>
